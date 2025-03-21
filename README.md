@@ -2,7 +2,7 @@
 
 ## 1. Introducción
 
-Este repositorio ha sido creado para **Cantabria Skills 2025**  en la especialidad de **ClLoud Computing**.
+Este repositorio ha sido creado para **Cantabria Skills 2025**  en la especialidad de **Cloud Computing**.
 
 ![Logo Cantabria Skills 2025 Cloud Computing](image/logo_cantabria_skills_2025_CloudComputing.png)
 
