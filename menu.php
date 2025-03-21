@@ -1,7 +1,7 @@
 <?php include 'vars.php';?>
 <?php include 'metadatos.php';?>
     <h1 class="display-4">
-        <img src="imagen/cantabria_skills_2025_CloudComputing.png" alt="Logo" class="img-thumbnail" style="width:50px; height:50px; margin-right:10px;">    
+        <img src="image/cantabria_skills_2025_CloudComputing.png" alt="Logo" class="img-thumbnail" style="width:50px; height:50px; margin-right:10px;">    
         Cantabria Skills 2025. Cloud Computing <span class="badge bg-secondary">
             <?php if($pagina=="/index.php"){  echo 'INDEX'; }?>
             <?php if($pagina=="/alumnos.php"){  echo 'ALUMNOS'; }?>
