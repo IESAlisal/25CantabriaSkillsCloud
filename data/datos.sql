@@ -22,9 +22,6 @@ CREATE TABLE IF NOT EXISTS Alumnos (
   CONSTRAINT pk_Alumnos PRIMARY KEY (IdAlumno)
 )  ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO Alumnos  VALUES
-(2000, 'Wiz', 'Prince', 'M', '', '788 Macpherson Place', 'Limpias', '', 32260, 697724216, 'Prince Wiz', '29/12/1988', 'pwiz0@behance.net', '', 'http://comsenz.com', '', 667220555, 'pwiz0@wiley.com');
-
 INSERT INTO Alumnos VALUES
 (1, 'Wiz', 'Prince', 'M', '', '788 Macpherson Place', 'Limpias', '', 32260, 697724216, 'Prince Wiz', '29/12/1988', 'pwiz0@behance.net', '', 'http://comsenz.com', '', 667220555, 'pwiz0@wiley.com'),
 (2, 'Kharchinski', 'Calv', 'M', '', '3506 Birchwood Pass', 'Laredo', '', 37564, 686166496, 'Calv Kharchinski', '22/06/1974', 'ckharchinski1@bing.com', '', 'https://vkontakte.ru', '', 686157565, 'ckharchinski1@spotify.com'),
