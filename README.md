@@ -44,3 +44,24 @@ sed -i "s/libros/$BBDD/g"               /var/www/html/vars.php
 sed -i "s/1Uno/$NumServidor/g"          /var/www/html/vars.php
 
 ```
+
+## 4. Instalación manual
+
+Para instalarlo manualmente se puede hacer lo siguiente:
+
+```shell
+sudo apt update -y
+sudo apt upgrade -y  
+sudo apt install apache2 php php-mysql mysql-client php-curl
+
+cd /var/www/html/
+rm index.html
+git clone https://github.com/IESAlisal/25CantabriaSkillsCloud .
+
+# Crea el fichero de configuración de la BBDD a partir del fichero de ejemplo
+cp vars-sample.php vars.php
+# modifica ese fichero vars.php con tus datos de la BBDD
+
+service apache2 restart
+
+```
