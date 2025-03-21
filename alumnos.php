@@ -58,7 +58,7 @@
                         mysqli_close($conexion);
                     ?>
                 </tbody>    
-            </table>';
+            </table>
         </div>
     </body>
 </html>
