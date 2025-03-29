@@ -36,7 +36,7 @@ service apache2 restart
 #para que funcione la aplicación                                                                       
 BBDDUsuario="admin"
 BBDDPassword="admin12345"
-BBDDServidor="???????gestion.c2wpdbm91fjm.us-east-1.rds.amazonaws.com"
+BBDDServidor="???gestion.c2wpdbm91fjm.us-east-1.rds.amazonaws.com"
 BBDD="skillsbbdd"
 NumServidor=$RANDOM
 
@@ -51,7 +51,7 @@ sed -i "s/1Uno/$NumServidor/g"          /var/www/html/vars.php
 
 ## 4. Instalación manual
 
-Para instalarlo manualmente se puede hacer lo siguiente:
+Para instalarlo manualmente en el sitio web por defecto del apache2 se puede hacer lo siguiente:
 
 ```shell
 sudo apt update -y
@@ -70,10 +70,10 @@ service apache2 restart
 
 ```
 
-## 5. Importación de los datos de ejemplo en la base de datos 
+## 5. Importación de los datos de ejemplo en la base de datos
 
 Para importar los datos de ejemplo en la base de datos, se puede hacer de la siguiente manera:
 
 ```shell
-mysql  -u admin -padmin12345 skillsbbdd < /var/www/html/data/datos.sql -h ???????gestion.c2wpdbm91fjm.us-east-1.rds.amazonaws.com
+mysql  -u admin -padmin12345 -h ???gestion.c2wpdbm91fjm.us-east-1.rds.amazonaws.com skillsbbdd < /var/www/html/data/datos.sql 
 ```
