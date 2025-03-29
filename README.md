@@ -10,11 +10,15 @@ Este repositorio ha sido creado para **Cantabria Skills 2025**  en la especialid
 
 Es necesario crear un servidor con apache2, php, php-curl, php-mysql y mysql-client.
 
+Y si está todo correctamente configurado se debería ver una página como la siguiente:
+![Página de inicio](image/vistaweb.png)
+
 ## 3. Instalación en una instancia EC2 en AWS
 
 A la hora de crear una instancia EC2 se puede meter un script de inicio para que se instale todo lo necesario en el campo de **Userdata**.
 
-Habría que cambiar los valores de usuario, password, servidor, BBDD.
+Habría que cambiar los valores de usuario, password, servidor, BBDD por los que quieras para tu configuración. 
+Hay que tener en cuenta que en este ejemplo se ha puesto una BBDD RDS de ejemplo en AWS, pero se puede cambiar por cualquier otra BBDD que tengas en tu red local o en otro servidor.
 
 ```shell
 #!/bin/bash
@@ -64,4 +68,12 @@ cp vars-sample.php vars.php
 
 service apache2 restart
 
+```
+
+## 5. Importación de los datos de ejemplo en la base de datos 
+
+Para importar los datos de ejemplo en la base de datos, se puede hacer de la siguiente manera:
+
+```shell
+mysql  -u admin -padmin12345 skillsbbdd < /var/www/html/data/datos.sql -h ???????gestion.c2wpdbm91fjm.us-east-1.rds.amazonaws.com
 ```
